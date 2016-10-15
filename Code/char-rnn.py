@@ -9,7 +9,7 @@ from keras.preprocessing import sequence
 from keras import backend as K
 from keras.layers.core import Dense, Dropout, Activation
 from keras.layers.embeddings import Embedding
-from keras.layers.recurrent import LSTM
+from keras.layers.recurrent import LSTM, GRU
 from keras.layers.convolutional import Convolution1D, MaxPooling1D
 
 from keras.utils import np_utils
@@ -18,12 +18,12 @@ from MyNormalizer import token
 ################# GLOBAL VARIABLES #####################
 #Filenames
 #TODO: Add to coding conventions that directories are to always end with '/'
-Masterdir = '/media/ameya/Research/Sub_word_LSTM/'
+Masterdir = '/media/ameya/Research/Sub-word-LSTM/'
 Datadir = 'Data/'
 Modeldir = 'Models/'
 Featuredir = 'Features/'
 inputdatasetfilename = 'IIITH_Codemixed.txt'
-exp_details = 'char_rnn_coling2'
+exp_details = 'new_experiment'
 
 #Data I/O formatting
 SEPERATOR = '\t'
@@ -306,6 +306,6 @@ if __name__ == '__main__':
 	print('Features extracted!')
 	
 	print('Saving experiment...')
-	#save_model(Masterdir,exp_details,model)
+	save_model(Masterdir,exp_details,model)
 	save_data(Masterdir,exp_details,X_train,X_test,y_train,y_test,features_train,features_test)
 	print('Saved! Experiment finished!')

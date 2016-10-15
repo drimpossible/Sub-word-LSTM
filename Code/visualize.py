@@ -25,8 +25,8 @@ def get_activations(model, layer, X_batch):
 	activations = get_activations([X_batch,0])
 	return activations
 
-experiment_details = 'char_rnn_emnlp_lstm128'
-Masterdir = '/media/ameya/Research/Sub_word_LSTM/'
+experiment_details = 'lstm128_subword'
+Masterdir = '/media/ameya/Research/Sub-word-LSTM/'
 Datadir = 'Data/'
 Modeldir = 'Models/'
 Featuredir = 'Features/'
