@@ -5,7 +5,7 @@ This repository contains all codes for reproducing results for our COLING paper.
 Details of the networks are given in our paper, and if you use our concept in future research, cite our paper:
 
 Towards Sub-Word Level Compositions for Sentiment Analysis of Hi-En Code Mixed Text, COLING 2016
-Ameya Prabhu*, Aditya Joshi*, Manish Shrivastava and Vasudeva Verma
+Ameya Prabhu\*, Aditya Joshi\*, Manish Shrivastava and Vasudeva Verma
 (* indicating equal contribution)
 
 ```
